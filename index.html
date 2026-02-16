@@ -1,0 +1,764 @@
+<!DOCTYPE HTML>
+<html lang="es" xml:lang="es">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <link href="jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+    <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    -->
+    <script type="text/javascript" src="scripts/jquery-1.4.2.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="scripts/jquery.easing.1.3.js" type="text/javascript"></script>
+    <script src="scripts/jquery.mousewheel.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="scripts/pop-ups.js"></script>
+    <script type="text/javascript">
+        //---
+        function loaded() {
+            document.getElementById('tope').style.visibility = 'hidden';
+        }
+        //---
+    </script>
+    <meta name="viewport" content="width=620" />
+    <link rel="icon" type="image/png" href="images/fgm1.ico" />
+
+
+
+    <script>
+        // Get the video borrar
+        var video = document.getElementById("myVideo");
+
+        // Get the button
+        var btn = document.getElementById("myBtn");
+
+        // Pause and play the video, and change the button text
+        function myFunction() {
+            if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+            } else {
+                video.pause();
+                btn.innerHTML = "Play";
+            }
+        }
+    </script>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            document.onmousemove = function(ev) {
+                var X = -ev.clientX / 4;
+                var Y = -ev.clientY / 4;
+                document.body.source.poster.backgroundPosition.miVideo.video = x + 'px' + y + 'px';
+            };
+
+        };
+    </script>
+
+</head>
+
+<body onLoad="loaded()">
+    <div id="tope"></div>
+    <video autoplay muted loop id="myVideo" poster="images/gallery/fondo1.gif">
+    <source src="images/gallery/fondo1.mp4" type="video/mp4">
+  </video>
+
+
+
+    <nav>
+        <hgroup>
+            <h1>Portafolio</h1>
+            <h4 style="margin-top:-10px;">Diseñador Gráfico <img style="float: right; margin-right:10%; margin-top: -25px; position: relative; z-index: 304; height: 58px; width: 146px; " src="images/fgm.png" width="225" height="134" alt="" /></h4>
+
+        </hgroup>
+        <ul id="menu" class="menu">
+            <li style="padding-left:70px;">
+                <a href="#" id="about"> <span class="active"></span> <span class="wrap"> <span class="link">Perfil</span> <span class="descr"></span> </span>
+                </a>
+            </li>
+            <li style="padding-left:89px;">
+                <a href="#" id="projects"> <span class="active"></span> <span class="wrap"> <span class="link">Trabajos</span>
+                    <span class="descr"></span> </span>
+                </a>
+            </li>
+            <li>
+                <a href="#" id="contact"> <span class="active"></span> <span class="wrap"> <span class="link">Contacto</span>
+                    <span class="descr"></span> </span>
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+    <section id="bg">
+        <section id="overlay"></section>
+        <a href="#" class="nextImageBtn" title="next"></a>
+        <a href="#" class="prevImageBtn" title="previous"></a><img src="images/fs_img_g_bg.png" alt="" title="" id="bgimg" />
+    </section>
+    <div id="preloader"><img src="images/ajax-loader_dark.gif" width="32" height="32" alt="" /></div>
+    <div id="img_title"></div>
+
+    <div id="thumbnails_wrapper">
+        <div id="outer_container">
+            <div class="thumbScroller">
+                <div class="container">
+                    <div class="content">
+                        <div>
+                            <a href="images/fs_img_g_bg.png"><img src="images/gallery/1_thumb.jpg" title=" " alt="Title of this pic" class="thumb" /></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div>
+                            <a href="images/gallery/2.jpg" style="
+          margin-top:-50;"><img src="images/gallery/2_thumb.jpg" title="Diseño Editorial" alt="Second Title" class="thumb" /></a>
+                        </div>
+                    </div>
+
+
+                    <div class="content">
+                        <div>
+                            <a href="images/gallery/3.jpg"><img src="images/gallery/3_thumb.jpg" title="Logos" alt="Third Title" class="thumb" /></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div>
+                            <a href="images/gallery/4.jpg"><img src="images/gallery/4_thumb.jpg" title="Diseño Web" alt="Fourth Title" class="thumb" /></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div>
+                            <a href="images/gallery/5.jpg"><img src="images/gallery/5_thumb.jpg" title="Identidad Visual" alt="Fifth Title" class="thumb" /></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div>
+                            <a href="images/gallery/6.jpg"><img src="images/gallery/6_thumb.jpg" title="Ilustración" alt="Sixth Title" class="thumb" /></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div>
+                            <a href="images/gallery/7.jpg"><img src="images/gallery/7_thumb.jpg" title="Digital" alt="Sixth Title" class="thumb" /></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div>
+                            <a href="images/fs_img_g_bg.png"><img src="images/gallery/1_thumb.jpg" title="." alt="Title of this pic" class="thumb" /></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div>
+                            <a href="images/gallery/2.jpg"><img src="images/gallery/2_thumb.jpg" title="Diseño Editorial" alt="Second Title" class="thumb" /></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div>
+                            <a href="images/gallery/3.jpg"><img src="images/gallery/3_thumb.jpg" title="Logos" alt="Third Title" class="thumb" /></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div>
+                            <a href="images/gallery/4.jpg"><img src="images/gallery/4_thumb.jpg" title="Diseño Web" alt="Fourth Title" class="thumb" /></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div>
+                            <a href="images/gallery/5.jpg"><img src="images/gallery/5_thumb.jpg" title="Identidad Visual" alt="Fifth Title" class="thumb" /></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div>
+                            <a href="images/gallery/6.jpg"><img src="images/gallery/6_thumb.jpg" title="Ilustración" alt="Fifth Title" class="thumb" /></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div>
+                            <a href="images/gallery/7.jpg"><img src="images/gallery/7_thumb.jpg" title="Digital" alt="Fifth Title" class="thumb" /></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <article id="popupAbout" class="popupAbout">
+        <div class="customScrollBox">
+            <div class="container">
+                <div class="content">
+                    <a id="popupAboutClose"><img src="images/cross.png" style="margin-top: -10px; position: fixed; height: 35px; width: 35px; margin-left: -5%;" width="40" alt="" /></a>
+                    <h1>Perfil</h1>
+                    <p><img src="images/connoisseur.png" alt="" class="image" style="padding-left:10px;" /> Interpreto gráficamente las ideas y conceptos que desea mostrar el cliente asesorándolo con mis conocimientos para obtener el arte final. Manejo programas
+                        de diagramación para la elaboración de revistas, periódicos, afiches, pendones, utilizando vectores y programas de edición fotográfica, incorporo el diseño en la diagramación de páginas web dando un nuevo aire a esta rama. La ilustración
+                        es uno de mis gustos el cual incorporo en la elaboración de piezas gráficas.
+                    </p>
+                    <h1>Estudio</h1>
+                    <p> Egresado de La Escuela de Artes y letras 2013 </p>
+
+                    <h1>Experiencia Laboral</h1>
+                    <p>Diseñador Gráfico 1 año en Sodexo S.A, y 4 meses de trabajo Freelance</p>
+                    <p>Freelance 2 años</p>
+                    <p>Diseñador Web/frontend 2018 - actualmente, conocimientos en cms wordpress, e-commerce, Html5, css, liferay y javascript.</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="dragger_container">
+                <div class="dragger"></div>
+            </div>
+        </div>
+        <a class="scrollUpBtn" href="#"></a>
+        <a class="scrollDownBtn" href="#"></a>
+    </article>
+    <article id="popupProjects" class="popupProjects">
+        <div class="customScrollBox">
+            <div class="container">
+
+                <div class="content">
+                    <a id="popupProjectsClose"><img src="images/cross.png" style="margin-top: -10px;
+    position: fixed; height: 35px; margin-left: -5%;" alt="#" /></a>
+
+                    <h1>Diseño Editorial
+                        <h3>Diagramación de Revistas, Periódicos, Catálogos, Libros. </h3>
+                    </h1>
+                    <p>
+                    </p>
+                    <nav class="menu2">
+                        <ul class="menu2">
+                            <li>
+                                <a href="#pic1"><img src="images/gallery/s3.png" alt="Picture 1"></a>
+                            </li>
+                            <li>
+                                <a href="#pic2"><img src="images/gallery/s2.png" alt="Picture 2"></a>
+                            </li>
+                            <li>
+                                <a href="#pic3"><img src="images/gallery/s4.png" alt="Picture 3"></a>
+                            </li>
+                            <li>
+                                <a href="#pic4"><img src="images/gallery/s5.png" alt="Picture 4"></a>
+                            </li>
+                            <li>
+                                <a href="#pic5"><img src="images/gallery/s6.png" alt="Picture 5"></a>
+                            </li>
+                            <li>
+                                <a href="#pic6"><img src="images/gallery/s7.png" alt="Picture 6"></a>
+                            </li>
+                            <li>
+                                <a href="#pic7"><img src="images/gallery/s8.png" alt="Picture 7"></a>
+                            </li>
+                            <li>
+                                <a href="#pic8"><img src="images/gallery/s9.png" alt="Picture 8"></a>
+                            </li>
+                            <li>
+                                <a href="#pic9"><img src="images/gallery/s10.png" alt="Picture 9"></a>
+                            </li>
+                            <li>
+                                <a href="#pic10"><img src="images/gallery/s11.png" alt="Picture 10"></a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <ul>
+                        <li id="pic1">
+                            <a href="#home"><img class="imgPrueba1" src="images/gallery/e3.png" style="width:60%;" alt=""></a>
+                            <h5>Portada Revista KIO</h5>
+                        </li>
+                        <li id="pic2">
+                            <a href="#home"><img class="imgPrueba" src="images/gallery/e1.png" style="height:90%;" alt=""></a>
+                            <h5>Publicidad Interna</h5>
+                        </li>
+                        <li id="pic3">
+                            <a href="#home"><img class="imgPrueba" src="images/gallery/e2.png" style="height:90%;" alt=""></a>
+                            <h5>Periódico </h5>
+                        </li>
+                        <li id="pic4">
+                            <a href="#home"><img class="imgPrueba1" src="images/gallery/e5.png" style="width:60%;" alt=""></a>
+                            <h5>Revista doble Página</h5>
+                        </li>
+                        <li id="pic5">
+                            <a href="#home"><img class="imgPrueba1" src="images/gallery/e4.png" style="width:60%;" alt=""></a>
+                            <h5>Portada Libro</h5>
+                        </li>
+                        <li id="pic6">
+                            <a href="#home"><img class="imgPrueba1" src="images/gallery/e6.png" style="width:60%;" alt=""></a>
+                            <h5>Revista Duotono</h5>
+                        </li>
+                        <li id="pic7">
+                            <a href="#home"><img class="imgPrueba1" src="images/gallery/e7.png" style="width:60%;" alt=""></a>
+                            <h5>Catálogo</h5>
+                        </li>
+                        <li id="pic8">
+                            <a href="#home"><img class="imgPrueba" src="images/gallery/e8.png" style="height:90%" alt=""></a>
+                            <h5>Portada Catalogo</h5>
+                        </li>
+                        <li id="pic9">
+                            <a href="#home"><img class="imgPrueba1" src="images/gallery/e9.png" style="width:60%;" alt=""></a>
+                            <h5>Revista</h5>
+                        </li>
+                        <li id="pic10">
+                            <a href="#home"><img class="imgPrueba" src="images/gallery/e10.png" style="height:90%;" alt=""></a>
+                            <h5>Piblicidad Interna Revista</h5>
+                        </li>
+                    </ul>
+
+                    <p>
+                    </p>
+
+
+                    <h1>Ilustración
+                        <h3>Tecnicas Esfero y Digital. </h3>
+                    </h1>
+                    <p>
+                    </p>
+                    <nav class="menu2">
+                        <ul class="menu2">
+                            <li>
+                                <a href="#pic26"><img src="images/gallery/ilp1.png" alt="Picture 26"></a>
+                            </li>
+                            <li>
+                                <a href="#pic76"><img src="images/gallery/ilp11.png" alt="Picture 36"></a>
+                            </li>
+                            <li>
+                                <a href="#pic77"><img src="images/gallery/ilp12.png" alt="Picture 37"></a>
+                            </li>
+                            <li>
+                                <a href="#pic78"><img src="images/gallery/ilp13.png" alt="Picture 38"></a>
+                            </li>
+                            <li>
+                                <a href="#pic79"><img src="images/gallery/ilp16.png" alt="Picture 38"></a>
+                            </li>
+                            <li>
+                                <a href="#pic80"><img src="images/gallery/ilp15.png" alt="Picture 38"></a>
+                            </li>
+                            <li>
+                                <a href="#pic81"><img src="images/gallery/ilp14.png" alt="Picture 38"></a>
+                            </li>
+                            <li>
+                                <a href="#pic27"><img src="images/gallery/ilp2.png" alt="Picture 27"></a>
+                            </li>
+                            <li>
+                                <a href="#pic28"><img src="images/gallery/ilp3.png" alt="Picture 28"></a>
+                            </li>
+                            <li>
+                                <a href="#pic29"><img src="images/gallery/ilp4.png" alt="Picture 29"></a>
+                            </li>
+                            <li>
+                                <a href="#pic30"><img src="images/gallery/ilp5.png" alt="Picture 30"></a>
+                            </li>
+                            <li>
+                                <a href="#pic31"><img src="images/gallery/ilp6.png" alt="Picture 31"></a>
+                            </li>
+                            <li>
+                                <a href="#pic32"><img src="images/gallery/ilp7.png" alt="Picture 32"></a>
+                            </li>
+                            <li>
+                                <a href="#pic33"><img src="images/gallery/ilp8.png" alt="Picture 33"></a>
+                            </li>
+                            <li>
+                                <a href="#pic34"><img src="images/gallery/ilp9.png" alt="Picture 34"></a>
+                            </li>
+                            <li>
+                                <a href="#pic35"><img src="images/gallery/ilp10.png" alt="Picture 35"></a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <ul>
+                        <li id="pic26">
+                            <a href="#home"><img class="imgPrueba" src="images/gallery/il1.png" style="height:90%;" alt=""></a>
+                            <h5>Técnica Mixta / Esfero y Pintura Digital</h5>
+                        </li>
+                        <li id="pic76">
+                            <a href="#home"><img class="imgPrueba" src="images/gallery/il11.png" style="height:90%;" alt=""></a>
+                            <h5>Técnica / Pintura Digital</h5>
+                        </li>
+                        <li id="pic78">
+                            <a href="#home"><img class="imgPrueba" src="images/gallery/il13.png" style="height:90%;" alt=""></a>
+                            <h5>Técnica / Pintura Digital</h5>
+                        </li>
+                        <li id="pic79">
+                            <a href="#home"><img class="imgPrueba" src="images/gallery/il16.png" style="height:90%;" alt=""></a>
+                            <h5>Técnica / Pintura Digital</h5>
+                        </li>
+                        <li id="pic80">
+                            <a href="#home"><img class="imgPrueba" src="images/gallery/il15.png" style="height:90%;" alt=""></a>
+                            <h5>Técnica / Pintura Digital</h5>
+                        </li>
+                        <li id="pic81">
+                            <a href="#home"><img class="imgPrueba" src="images/gallery/il14.png" style="height:90%;" alt=""></a>
+                            <h5>Técnica / Pintura Digital</h5>
+                        </li>
+                        <li id="pic77">
+                            <a href="#home"><img class="imgPrueba" src="images/gallery/il12.png" style="height:90%;" alt=""></a>
+                            <h5>Técnica / Pintura Digital</h5>
+                        </li>
+                        <li id="pic27">
+                            <a href="#home"><img class="imgPrueba" src="images/gallery/il2.png" style="height:90%;" alt=""></a>
+                            <h5>Técnica / Esfero Sobre Opalina</h5>
+                        </li>
+                        <li id="pic28">
+                            <a href="#home"><img class="imgPrueba" src="images/gallery/il3.png" style="height:90%;" alt=""></a>
+                            <h5>Técnica / Esferos de Color Sobre Opalina</h5>
+                        </li>
+                        <li id="pic29">
+                            <a href="#home"><img class="imgPrueba" src="images/gallery/il4.png" style="height:90%;" alt=""></a>
+                            <h5>Técnica / Esfero Sobre Opalina</h5>
+                        </li>
+                        <li id="pic30">
+                            <a href="#home"><img class="imgPrueba" src="images/gallery/il5.png" style="height:90%;" alt=""></a>
+                            <h5>Técnica / Esfero Sobre Opalina</h5>
+                        </li>
+                        <li id="pic31">
+                            <a href="#home"><img class="imgPrueba" src="images/gallery/il6.png" style="height:90%;" alt=""></a>
+                            <h5>Técnica / Esfero Sobre Opalina</h5>
+                        </li>
+                        <li id="pic32">
+                            <a href="#home"><img class="imgPrueba" src="images/gallery/il7.png" style="height:90%;" alt=""></a>
+                            <h5>Técnica / Esfero Sobre Opalina</h5>
+                        </li>
+                        <li id="pic33">
+                            <a href="#home"><img class="imgPrueba" src="images/gallery/il8.png" style="height:90%;" alt=""></a>
+                            <h5>Técnica / Esfero Sobre Opalina</h5>
+                        </li>
+                        <li id="pic34">
+                            <a href="#home"><img class="imgPrueba" src="images/gallery/il9.png" style="height:90%;" alt=""></a>
+                            <h5>Técnica / Esfero Sobre Opalina</h5>
+                        </li>
+                        <li id="pic35">
+                            <a href="#home"><img class="imgPrueba1" src="images/gallery/il10.png" style="width:60%;" alt=""></a>
+                            <h5>Técnica / Esfero Sobre Opalina</h5>
+                        </li>
+
+                    </ul>
+
+
+                    <p>
+                    </p>
+                    <h1>Logos
+                        <h3>Elavoración y Vectorizado de Logotipos</h3>
+                    </h1>
+                    <p>
+                    </p>
+                    <nav class="menu2">
+                        <ul class="menu2">
+                            <li>
+                                <a href="#pic11"><img src="images/gallery/lp1.png" alt="Picture 11"></a>
+                            </li>
+                            <li>
+                                <a href="#pic12"><img src="images/gallery/lp2.png" alt="Picture 12"></a>
+                            </li>
+                            <li>
+                                <a href="#pic13"><img src="images/gallery/lp3.png" alt="Picture 13"></a>
+                            </li>
+                            <li>
+                                <a href="#pic14"><img src="images/gallery/lp4.png" alt="Picture 14"></a>
+                            </li>
+                            <li>
+                                <a href="#pic15"><img src="images/gallery/lp5.png" alt="Picture 15"></a>
+                            </li>
+                            <li>
+                                <a href="#pic16"><img src="images/gallery/lp6.png" alt="Picture 16"></a>
+                            </li>
+                            <li>
+                                <a href="#pic17"><img src="images/gallery/lp7.png" alt="Picture 17"></a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                    <ul>
+                        <li id="pic11">
+                            <a href="#home"><img class="imgPrueba1" src="images/gallery/l1.png" style="width:60%;" alt=""></a>
+                            <h5>Logo Tienda de Mascotas</h5>
+                        </li>
+                        <li id="pic12">
+                            <a href="#home"><img class="imgPrueba1" src="images/gallery/l2.png" style="width:60%;" alt=""></a>
+                            <h5>Rediseño de Logo</h5>
+                        </li>
+                        <li id="pic13">
+                            <a href="#home"><img class="imgPrueba" src="images/gallery/l3.png" style="height:90%;" alt=""></a>
+                            <h5>Logo Personal</h5>
+                        </li>
+                        <li id="pic14">
+                            <a href="#home"><img class="imgPrueba1" src="images/gallery/l4.png" style="width:60%;" alt=""></a>
+                            <h5>Logo Turismo Extremo</h5>
+                        </li>
+                        <li id="pic15">
+                            <a href="#home"><img class="imgPrueba1" src="images/gallery/l5.png" style="width:60%;" alt=""></a>
+                            <h5>Logo Redes y Diseño</h5>
+                        </li>
+                        <li id="pic16">
+                            <a href="#home"><img class="imgPrueba1" src="images/gallery/l6.png" style="width:60%;" alt=""></a>
+                            <h5>Logo Pulpa de Frutas</h5>
+                        </li>
+                        <li id="pic17">
+                            <a href="#home"><img class="imgPrueba" src="images/gallery/l7.png" style=" height:90%;" alt=""></a>
+                            <h5>Tipografia HUMAN</h5>
+                        </li>
+
+                    </ul>
+
+                    <p>
+
+                        <h1>Videos
+                            <h3>Edición de Video </h3>
+                        </h1>
+                        <p>
+                        </p>
+                        <nav class="menu2">
+                            <ul class="menu2">
+                                <li>
+                                    <a href="#pic66"><img src="images/gallery/v1.png" alt="Picture 1"></a>
+                                </li>
+                                <li>
+                                    <a href="#pic67"><img src="images/gallery/v2.png" alt="Picture 2"></a>
+                                </li>
+                                <li>
+                                    <a href="#pic68"><img src="images/gallery/v3.png" alt="Picture 3"></a>
+                                </li>
+                                <li>
+                                    <a href="#pic69"><img src="images/gallery/v4.png" alt="Picture 4"></a>
+                                </li>
+
+                            </ul>
+                        </nav>
+                        <ul>
+                            <li id="pic66">
+                                <a href="#home">
+                                    <div class="video-responsive">
+                                        <iframe style="margin-top: 15%;" class="youtube-player" type="text/html" width="640" height="385" src="https://www.youtube.com/embed/tYPfz_62Rpo" frameborder="0"> </iframe></div>
+                                </a>
+                                <h5>Tipografia</h5>
+                            </li>
+                            <li id="pic67">
+                                <a href="#home">
+                                    <div class="video-responsive">
+                                        <iframe style="margin-top: 15%;" class="youtube-player" type="text/html" width="640" height="385" src="https://www.youtube.com/embed/SQ-RrLSdwHE" frameborder="0"> </iframe></div>
+                                </a>
+                                <h5>Presentación</h5>
+                            </li>
+                            <li id="pic68">
+                                <a href="#home">
+                                    <div class="video-responsive">
+                                        <iframe style="margin-top: 15%;" class="youtube-player" type="text/html" width="640" height="385" src="https://www.youtube.com/embed/NzBJaAS_yIg" frameborder="0"> </iframe></div>
+                                </a>
+                                <h5>Animación </h5>
+                            </li>
+                            <li id="pic69">
+                                <a href="#home">
+                                    <div class="video-responsive">
+                                        <iframe style="margin-top: 15%;" class="youtube-player" type="text/html" width="640" height="385" src="https://www.youtube.com/embed/jiN5c55K0XU" frameborder="0"> </iframe></div>
+                                </a>
+                                <h5>Logo</h5>
+                            </li>
+
+                        </ul>
+
+                        <p>
+                        </p>
+                    </p>
+                    <h1>Digital
+                        <h3>Diseño de piezas: Retoque Fotográfico, Arte digital, Fotomontajes</h3>
+                    </h1>
+                    <p>
+                    </p>
+                    <nav class="menu2">
+                        <ul class="menu2">
+                            <li>
+                                <a href="#pic36"><img src="images/gallery/dp1.png" alt="Picture 36"></a>
+                            </li>
+                            <li>
+                                <a href="#pic37"><img src="images/gallery/dp2.png" alt="Picture 37"></a>
+                            </li>
+                            <li>
+                                <a href="#pic38"><img src="images/gallery/dp3.png" alt="Picture 38"></a>
+                            </li>
+                            <li>
+                                <a href="#pic39"><img src="images/gallery/dp4.png" alt="Picture 39"></a>
+                            </li>
+                            <li>
+                                <a href="#pic40"><img src="images/gallery/dp5.png" alt="Picture 40"></a>
+                            </li>
+                            <li>
+                                <a href="#pic41"><img src="images/gallery/dp6.png" alt="Picture 41"></a>
+                            </li>
+                            <li>
+                                <a href="#pic42"><img src="images/gallery/dp7.png" alt="Picture 42"></a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                    <ul>
+                        <li id="pic36">
+                            <a href="#home"><img class="imgPrueba" src="images/gallery/d1.png" style=" height:90%;" alt=""></a>
+                            <h5>Flyer Digital</h5>
+                        </li>
+                        <li id="pic37">
+                            <a href="#home"><img class="imgPrueba" src="images/gallery/d2.png" style="height:90%;" alt=""></a>
+                            <h5>Publicidad Cancer de Seno</h5>
+                        </li>
+                        <li id="pic38">
+                            <a href="#home"><img class="imgPrueba" src="images/gallery/d3.png" style="height:90%;" alt=""></a>
+                            <h5>Tarjeta Digital</h5>
+                        </li>
+                        <li id="pic39">
+                            <a href="#home"><img class="imgPrueba" src="images/gallery/d4.png" style="height:90%;" alt=""></a>
+                            <h5>Publicidad Calentamiengo Global</h5>
+                        </li>
+                        <li id="pic40">
+                            <a href="#home"><img class="imgPrueba1" src="images/gallery/d5.png" style="width:60%;" alt=""></a>
+                            <h5>Flyer Autolavado</h5>
+                        </li>
+                        <li id="pic41">
+                            <a href="#home"><img class="imgPrueba1" src="images/gallery/d6.png" style="width:60%;" alt=""></a>
+                            <h5>Invitación</h5>
+                        </li>
+                        <li id="pic42">
+                            <a href="#home"><img class="imgPrueba1" src="images/gallery/d7.png" style="width:60%;" alt=""></a>
+                            <h5>Home</h5>
+                        </li>
+
+
+                    </ul>
+                    <p></p>
+                    <p></p>
+
+                    <h1>Identidad Visual
+                        <h3>Creación de imagen corporativa, Manual corporativo, Colores y variaciones, Diseño de papeleria comercial
+                        </h3>
+                    </h1>
+                    <p>
+                    </p>
+                    <nav class="menu2">
+                        <ul class="menu2">
+                            <li>
+                                <a href="#pic21"><img src="images/gallery/ip1.png" alt="Picture 21"></a>
+                            </li>
+                            <li>
+                                <a href="#pic22"><img src="images/gallery/ip2.png" alt="Picture 22"></a>
+                            </li>
+                            <li>
+                                <a href="#pic23"><img src="images/gallery/ip3.png" alt="Picture 23"></a>
+                            </li>
+                            <li>
+                                <a href="#pic24"><img src="images/gallery/ip4.png" alt="Picture 24"></a>
+                            </li>
+                            <li>
+                                <a href="#pic25"><img src="images/gallery/ip5.png" alt="Picture 25"></a>
+                            </li>
+
+                        </ul>
+                    </nav>
+
+                    <h1></h1>
+                    <p>
+                    </p>
+                    <h1>Diseño Web
+                        <h3>Web en Html5 - CCS3, Sitios interactivos, Asesoría, Plantillas según su actividad</h3>
+                    </h1>
+
+                    <p>
+                    </p>
+                    <nav class="menu2">
+                        <ul class="menu2">
+                            <li>
+                                <a href="http://thechotolate.epizy.com/" target="_blank"><img src="images/gallery/wp1.png" alt="Picture 18"></a>
+                            </li>
+
+                            <li>
+                                <a href="http://trayco.com.co/" target="_blank"><img src="images/gallery/wp3.png" alt="Picture 20"></a>
+                            </li>
+                            <li>
+                                <a href="http://floraurbana.epizy.com/" target="_blank"><img src="images/gallery/wp4.png" alt="Picture 21"></a>
+                            </li>
+
+                        </ul>
+                    </nav>
+
+                    <p>
+                    </p>
+                    <ul>
+                        <li id="pic21">
+                            <a href="#home"><img class="imgPrueba" src="images/gallery/i1.png" style=" height:90%;" alt=""></a>
+                            <h5>Pendón</h5>
+                        </li>
+                        <li id="pic22">
+                            <a href="#home"><img class="imgPrueba" src="images/gallery/i2.png" style="height:90%;" alt=""></a>
+                            <h5>Folleto</h5>
+                        </li>
+                        <li id="pic23">
+                            <a href="#home"><img class="imgPrueba" src="images/gallery/i3.png" style="height:90%;" alt=""></a>
+                            <h5>Logo, Tarjeta Uniformes</h5>
+                        </li>
+                        <li id="pic24">
+                            <a href="#home"><img class="imgPrueba1" src="images/gallery/i4.png" style="width:60%;" alt=""></a>
+                            <h5>Papelería</h5>
+                        </li>
+                        <li id="pic25">
+                            <a href="#home"><img class="imgPrueba" src="images/gallery/i5.png" style="height:90%;" alt=""></a>
+                            <h5>Flyer</h5>
+                        </li>
+
+
+                    </ul>
+
+
+                    <p>
+                    </p>
+
+                    <nav class="menu2">
+                        <ul class="menu2">
+                            <li><img src="images/fondo.png" alt="Picture 21"></li>
+                            <li><img src="" alt="Picture 22"></li>
+                            <li><img src="" alt="Picture 23"></li>
+                            <li><img src="" alt="Picture 24"></li>
+                            <li><img src="" alt="Picture 25"></li>
+
+                        </ul>
+                    </nav>
+
+
+
+                </div>
+            </div>
+            <div class="dragger_container">
+                <div class="dragger"></div>
+            </div>
+            <a class="scrollUpBtn" href="#"></a>
+            <a class="scrollDownBtn" href="#"></a>
+        </div>
+    </article>
+    <article id="popupContact" class="popupContact">
+        <div class="customScrollBox">
+            <div class="container">
+                <div class="content">
+                    <a id="popupContactClose"><img src="images/cross.png" style=" position: fixed; height: 35px; width: 35px; " width="40" alt="" /></a>
+                    <h1>Contacto</h1>
+                    <p></p>
+
+                    <h3>Fabioan06@gmail.com <br> Diseñador Gráfico</h3>
+                    <h3>Cel: 310 795 04 03</h3>
+                    <br />
+                    <iframe width="425" height="300" class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.39280680133!2d-74.247896193918!3d4.648625942919784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoQ!5e0!3m2!1ses!2sco!4v1464304641346"></iframe>
+
+                </div>
+            </div>
+            <div class="dragger_container">
+                <div class="dragger"></div>
+            </div>
+
+            <a class="scrollUpBtn" href="#"></a>
+            <a class="scrollDownBtn" href="#"></a>
+        </div>
+    </article>
+
+    <script type="text/javascript" src="scripts/gallery.js"></script>
+    <script src="scripts/gallery.js"></script>
+    <script type="text/javascript" src="scripts/jquery.mCustomScrollbar.js"></script>
+
+
+
+
+
+</body>
+
+</html>
