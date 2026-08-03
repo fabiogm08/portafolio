@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="8.4666586mm"
+   height="8.2544708mm"
+   viewBox="0 0 8.4666586 8.2544708"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs1"><linearGradient
+       id="swatch22"><stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop22" /></linearGradient><linearGradient
+       id="swatch21"><stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="0"
+         id="stop21" /></linearGradient><linearGradient
+       xlink:href="#swatch21"
+       id="linearGradient22"
+       x1="125.39441"
+       y1="129.92448"
+       x2="134.14708"
+       y2="129.92448"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0.26185048,12.68601)" /></defs><g
+     id="layer1"
+     transform="translate(-125.727,-138.5278)"><g
+       id="g23"
+       style="fill:#ef6ff6;fill-opacity:0.56"
+       transform="translate(-0.04462139)"><path
+         d="m 128.80176,144.50071 h -0.7106 v -3.89405 h 0.7106 z m 2.53643,0 -0.0289,-0.44458 h -0.011 c -0.16789,0.31181 -0.50856,0.5084 -0.91885,0.5084 -0.67011,0 -1.20167,-0.57203 -1.20167,-1.43892 -0.006,-0.94165 0.58372,-1.50218 1.25984,-1.50218 0.38713,0 0.66429,0.16182 0.7914,0.36982 h 0.011 v -1.59464 h 0.71041 v 3.31069 c 0,0.28904 0.011,0.60103 0.0221,0.79157 h -0.63585 z m -0.72792,-2.32821 c -0.4566,0 -0.7106,0.40424 -0.7106,0.93031 0,0.51406 0.25389,0.88988 0.70495,0.88988 0.28921,0 0.54322,-0.19655 0.6125,-0.50275 0.0165,-0.0637 0.0221,-0.13287 0.0221,-0.20813 v -0.42159 c 0,-0.0579 -0.006,-0.12736 -0.0165,-0.18525 -0.0637,-0.27717 -0.28882,-0.50236 -0.61249,-0.50236 z"
+         id="path21"
+         style="fill:#ef6ff6;fill-opacity:0.56;stroke:url(#linearGradient22);stroke-width:0.329;stroke-dasharray:none" /><path
+         d="m 125.77162,138.5278 v 8.25447 h 8.46666 v -8.25447 z m 0.35269,0.35269 h 7.76102 v 7.54883 h -7.76102 z"
+         id="path23"
+         style="fill:#ef6ff6;fill-opacity:0.56;stroke-width:0.264583" /></g></g></svg>
