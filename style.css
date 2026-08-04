@@ -597,6 +597,14 @@ input[type=submit] {
 	left: 10px;
 	background-size:contain;
 	}
+
+	
+  ul.personalizada li::marker {
+    content: "➔ ";
+    color:#d23551;
+    font-size: 1.2rem;
+  }
+
 	/*
 .thumbnail {
 	position: relative; 
